@@ -107,22 +107,23 @@ main section p {
     margin: 6px;
     line-height: 1.4;
 }
-aside {
+.info-section {
     background: var(--pink);
     color: var(--white);
     padding: 16px;
     text-align: left;
     margin: 0;
+    width: 100%;
 }
-aside section {
+.info-section .tiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    background: transparent;
-    margin: 0;
+    margin: 4px;
     padding: 0;
+    background: transparent;
 }
-aside section h4 {
+.info-section h4 {
     font-family: "Inter";
     color: var(--dark);
     font-size: 1.15em;
@@ -131,11 +132,25 @@ aside section h4 {
     border-radius: 8px;
     margin: 0;
 }
-aside p {
+.info-section .personalized { 
+    background: var(--teal); 
+}
+.info-section .proven { 
+    background: var(--lavender); 
+}
+.info-section .supportive { 
+    background: var(--yellow); 
+}
+.info-section .flexible { 
+    background: var(--white); 
+}
+
+.info-section p {
     font-family: "Inter";
     margin: 4px;
+    color: var(--white);
 }
-aside button {
+.info-section button {
     display: block;
     margin: 1rem auto;
     padding: 20px 24px;
